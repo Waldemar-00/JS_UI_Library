@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    min-width: 150px;
+    min-height: 40px;
+    background-color: pink;
+    text-align: center;
+}
+.active {
+    font-size: 20px;
+    color: rgb(146, 4, 4);
+}
