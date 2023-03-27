@@ -28,3 +28,24 @@ $.prototype.index = function () {
     };
     return myChildren.findIndex(findMyElement);
 };
+$.prototype.find = function (selector) {
+    let items = 0;
+    let noteCounter = 0;
+    const copy = Object.assign({}, this);
+    for (let i = 0; i < copy.length; i++) {
+        const array = copy[i].querySelectorAll(selector);
+        if (array.length === 0) {
+            continue;
+        }
+        for (let j = 0; j < array.length; j++) {
+            this[noteCounter] = array[j];
+            noteCounter++;
+        }
+        items += array.length;
+    }
+    this.length = items;
+    for (; items < Object.keys(this).length; items++) {
+        delete this[items];
+    }
+    return this;
+};
