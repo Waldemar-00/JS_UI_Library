@@ -7,3 +7,6 @@ setTimeout(() => {
     console.log($('button').html());
 }, 4000);
 
+$('button').on('click', function () {
+    $('div').eq(0).toggleClass('active');
+});
