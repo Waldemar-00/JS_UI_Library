@@ -20,3 +20,11 @@ $.prototype.eq = function (index) {
     this.length = 1;
     return this;
 };
+$.prototype.index = function () {
+    const parent = this[0].parentNode;
+    const myChildren = [...parent.children];
+    const findMyElement = item => {
+        return item === this[0];
+    };
+    return myChildren.findIndex(findMyElement);
+};
