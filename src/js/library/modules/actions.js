@@ -64,3 +64,24 @@ $.prototype.closest = function (selector) {
     }
     return this;
 };
+$.prototype.siblings = function () {
+    let items = 0;
+    let noteCounter = 0;
+    const copy = Object.assign({}, this);
+    for (let i = 0; i < copy.length; i++) {
+        const array = copy[i].parentNode.children;
+        for (let j = 0; j < array.length; j++) {
+            if (copy[i] === array[j]) {
+                continue;
+            }
+            this[noteCounter] = array[j];
+            noteCounter++;
+        }
+        items += array.length - 1;
+    }
+    this.length = items;
+    for (; items < Object.keys(this).length; items++) {
+        delete this[items];
+    }
+    return this;
+};
