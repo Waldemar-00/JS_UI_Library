@@ -5,7 +5,7 @@ $.prototype.init = function (selector) {
     if (!selector) {
         return this; // return empty object - {empty}
     }
-    if (selector.tagName) {
+    if (selector.tagName) { //if we get html element like argument
         this[0] = selector;
         this.lenght = 1;
         return this;
