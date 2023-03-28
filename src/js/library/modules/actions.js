@@ -49,3 +49,18 @@ $.prototype.find = function (selector) {
     }
     return this;
 };
+$.prototype.closest = function (selector) {
+    let counter = 0;
+    for (let i = 0; i < this.length; i++) {
+        if (this[i].closest(selector) === null) {
+            continue;
+        }
+        this[i] = this[i].closest(selector);
+        counter++;
+    }
+    const leng = Object.keys(this).length;
+    for (; counter < leng; counter++) {
+        delete this[counter];
+    }
+    return this;
+};

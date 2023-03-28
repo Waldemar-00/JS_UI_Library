@@ -8,4 +8,5 @@ $('button').on('click', function () {
 $('div').click(function () {
     console.log($(this).index());
 });
-console.log($('div').eq(5).find('.more'));
+//console.log($('div').eq(5).find('.more'));
+console.log($('.some').closest('.some-more'));
