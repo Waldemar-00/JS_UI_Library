@@ -10,4 +10,5 @@ import $ from './library/lib';
 // });
 //console.log($('div').eq(5).find('.more'));
 // console.log($('.some').closest('.some-more'));
-console.log($('.some-more').siblings());
+//console.log($('.some-more').siblings());
+$('.some-more').fadeIn(3000);

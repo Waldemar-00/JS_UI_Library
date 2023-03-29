@@ -13,3 +13,9 @@ button {
     font-size: 20px;
     color: rgb(146, 4, 4);
 }
+.some-more {
+    width: 300px;
+    height: 300px;
+    margin: 20px 0 20px 100px;
+    font-size: 40px;
+}
