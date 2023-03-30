@@ -1,0 +1,24 @@
+/* @font-face { */
+    /* font-family: 'Roboto'; */
+    /* src: url('../fonts/Roboto/Roboto-Black.ttf'); */
+    /* src: url('../fonts/Roboto/Roboto-BlackItalic.ttf'); */
+    /* src: url('../fonts/Roboto/Roboto-Bold.ttf'); */
+    /* src: url('../fonts/Roboto/Roboto-BoldItalic.ttf'); */
+    /* src: url('../fonts/Roboto/Roboto-Italic.ttf'); */
+    /* src: url('../fonts/Roboto/Roboto-Italic.ttf'); */
+    /* src: url('../fonts/Roboto/Roboto-Light.ttf'); */
+    /* src: url('../fonts/Roboto/Roboto-LightItalic.ttf'); */
+    /* src: url('../fonts/Roboto/Roboto-Medium.ttf'); */
+    /* src: url('../fonts/Roboto/Roboto-MediumItalic.ttf'); */
+    /* src: url('../fonts/Roboto/Roboto-Regular.ttf'); */
+    /* src: url('../fonts/Roboto/Roboto-Thin.ttf'); */
+    /* src: url('../fonts/Roboto/Roboto-ThinItalic.ttf'); */
+    /* font-weight: normal; */
+    /* font-style: normal; */
+/* } */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}

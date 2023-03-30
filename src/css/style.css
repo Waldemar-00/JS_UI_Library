@@ -1,12 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import './cssLibrary/general/_base.css';
+@import './cssLibrary/general/_variables.css';
+@import './cssLibrary/general/_typography.css';
 button {
     min-width: 150px;
     min-height: 40px;
-    background-color: pink;
+    background-color: var(--color-black);
     text-align: center;
 }
 .active {

@@ -9,7 +9,6 @@ $.prototype.animate = function (duration, callback, finish) {
         }
         let elapsed = time - start; // 0, if we start
         let clarity = Math.min(elapsed / duration, 1);
-        console.log(clarity);
         callback(clarity);
         if (elapsed < duration) {
             requestAnimationFrame(_animate);
