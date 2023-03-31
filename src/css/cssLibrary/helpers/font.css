@@ -1,0 +1,33 @@
+.fz-16 {
+    font-size: 16px;
+}
+.fz-20 {
+    font-size: 20px;
+}
+.fz-24 {
+    font-size: 24px;
+}
+.bold {
+    font-weight: bold;
+}
+.thin {
+    font-weight: 300;
+}
+.italic {
+    font-style: italic;
+}
+.text-blue {
+    color: var(--color-blue);
+}
+.text-pink {
+    color: var(--color-pink);
+}
+.text-orange {
+    color: var(--color-orange);
+}
+.text-black {
+    color: var(--color-black);
+}
+.text-red {
+    color: var(--color-red);
+}

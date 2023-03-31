@@ -1,7 +1,9 @@
 @import './cssLibrary/general/_base.css';
 @import './cssLibrary/general/_variables.css';
 @import './cssLibrary/general/_typography.css';
-@import './cssLibrary/components/buttons.css';
+@import './cssLibrary/components/aui.css';
+@import './cssLibrary/helpers/ahelper.css';
+
 .active {
     font-size: 20px;
     color: rgb(146, 4, 4);
