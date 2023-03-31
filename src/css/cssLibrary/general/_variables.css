@@ -1,7 +1,7 @@
 :root {
-    --color-pink: pink;
-    --color-yellow: yellow;
-    --color-red: rgb(255, 106, 106);
-    --color-blue: rgb(109, 109, 255);
-    --color-black: rgb(73, 73, 73);
+    --color-pink: hsl(350, 100%, 88%);
+    --color-orange: hsl(27, 97%, 70%);
+    --color-red: hsl(0, 100%, 71%);
+    --color-blue: hsl(240, 100%, 71%);
+    --color-black: hsl(0, 0%, 29%);
 }
