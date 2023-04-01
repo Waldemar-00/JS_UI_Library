@@ -45,3 +45,25 @@ $.prototype.fadeOut = function (duration, finish) {
     }
     return this;
 };
+$.prototype.fadeToggle = function (duration, finish, display = 'block') {
+    for (let i = 0; i < this.length; i++) {
+        if (window.getComputedStyle(this[i]).display === 'none') {
+            this[i].style.display = display;
+            const _fadeIn = (clarity) => {
+                this[i].style.opacity = clarity;
+            };
+            const animate = this.animate(duration, _fadeIn, finish);
+            requestAnimationFrame(animate);
+        } else {
+            const _fadeOut = (clarity) => {
+                this[i].style.opacity = 1 - clarity;
+                if (clarity === 1) {
+                    this[i].style.display = 'none';
+                }
+            };
+            const ani = this.animate(duration, _fadeOut, finish);
+            requestAnimationFrame(ani);
+        }
+    }
+    return this;
+};
