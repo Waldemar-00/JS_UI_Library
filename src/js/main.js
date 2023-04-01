@@ -1,14 +1,11 @@
 import './library/lib';
 import $ from './library/lib';
-
-// $('button').on('click', function () {
-    // $('div').eq(0).toggleClass('active');
-// });
-//
-// $('div').click(function () {
-    // console.log($(this).index());
-// });
-//console.log($('div').eq(5).find('.more'));
-// console.log($('.some').closest('.some-more'));
-//console.log($('.some-more').siblings());
-$('.some-more').fadeIn(3000);
+$('#first').on('click', () => {
+    $('div').eq(1).fadeOut(800);
+});
+$('[data-count="2"]').on('click', () => {
+    $('div').eq(2).fadeOut(800);
+});
+$('button').eq(2).on('click', () => {
+    $('.w-500').fadeOut(800);
+});

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Library</title>
+        <link rel="shortcut icon" href="book.webp" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,31 +18,34 @@
     <body>
         <div class="container">
             <h1>Hi, my first library.</h1>
-            <div>library</div>
-            <div class="active">library</div>
-            <div>library</div>
-            <div class="active">library</div>
-            <div>library</div>
-            <div class="some-more">
-                <div class="more">more</div>
-                <div class='more'>more</div>
-                <div class='more'>more</div>
-                <div class='some'>some</div>
-                <div class="some">some</div>
+            <button class="btn m20" id="first">First text fade out</button>
+            <button class="btn blue-btn m20" data-count="2">Second text fade out</button>
+            <button class="btn pink-btn m20">All text fade out</button>
+            <div class="w-500 block-center mt-20">
+                Method chaining, or simply chaining, in JavaScript can be defined as when one or more sequential methods get invoked
+                from an object without the introduction of unnecessary variables. The sole purpose of chaining is to make our code more
+                readable and reduce the redundancy within.
+                
+                If you are familiar with and methods from JavaScript promises then you already have some basic knowledge as to how
+                chaining works.
             </div>
-            <button class="btn">Click me!</button>
-            <button class="btn blue-btn">dark!</button>
-            <button class="btn pink-btn">pink</button>
-            <button class="btn orange-btn">orange</button>
-            <button class="btn red-btn">red</button>
-            <button class="btn black-btn">black</button>
-            <hr>
-            <button class="btn">Click me!</button>
-            <button class="btn blue-outline-btn">dark!</button>
-            <button class="btn pink-outline-btn">pink</button>
-            <button class="btn orange-outline-btn">orange</button>
-            <button class="btn red-outline-btn">red</button>
-            <button class="btn black-outline-btn">black</button>
+            <div class="w-500 block-center mt-20">
+                Looking at the example above, we can see that we attempt to get the time zone offset from a date object. Look at how many variables we have declared here to return such a simple string. There are 8 to be exact. This seems very redundant for something as simple as this.
+
+                        So how can we make this better?
+
+                        With the help of chaining of course!
+            </div>
+            <!-- <button class="btn orange-btn">orange</button> -->
+            <!-- <button class="btn red-btn">red</button> -->
+            <!-- <button class="btn black-btn">black</button> -->
+            <!-- <hr> -->
+            <!-- <button class="btn">Click me!</button> -->
+            <!-- <button class="btn blue-outline-btn">dark!</button> -->
+            <!-- <button class="btn pink-outline-btn">pink</button> -->
+            <!-- <button class="btn orange-outline-btn">orange</button> -->
+            <!-- <button class="btn red-outline-btn">red</button> -->
+            <!-- <button class="btn black-outline-btn">black</button> -->
         </div>
         <script src='js/main.js'></script>
     </body>
