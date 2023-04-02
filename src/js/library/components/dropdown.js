@@ -1,6 +1,6 @@
 import $ from '../core';
 
-$.prototype.dropdpwn = function () {
+$.prototype.dropdown = function () {
     for (let i = 0; i < this.length; i++) {
         const id = this[i].getAttribute('id');
         $(this[i]).click(() => {
@@ -8,4 +8,4 @@ $.prototype.dropdpwn = function () {
         });
     }
 };
-$('.dropdown-toggle').dropdpwn();
+$('.dropdown-toggle').dropdown();
