@@ -3,7 +3,9 @@ import $ from '../core';
 $.prototype.dropdown = function () {
     for (let i = 0; i < this.length; i++) {
         const id = this[i].getAttribute('id');
-        $(this[i]).click(() => {
+        $(this[i]).click((e) => {
+            e.preventDefault();
+            e.stopPropagation();
             $(`[data-toggle-id="${id}"]`).fadeToggle(500);
         });
     }
