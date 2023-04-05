@@ -1,7 +1,7 @@
 .modal {
     position: fixed;
     top: 0;
-    left: 0;
+    left: calc((100vw - 100%)/2); /*no jump from scroll*/
     z-index: 1050;
     display: none;
     width: 100%;

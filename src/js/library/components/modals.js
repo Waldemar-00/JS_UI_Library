@@ -4,7 +4,8 @@ $.prototype.modal = function () {
         const target = this[i].getAttribute('data-target');
         $(this[i]).click(() => {
             $(target).fadeIn(500);
-            // document.body.style.overflow = 'hidden';
+            document.body.classList.add('calc');
+            document.body.style.overflow = 'hidden';
         });
     }
     const closes = document.querySelectorAll("[data-close]");
@@ -12,14 +13,14 @@ $.prototype.modal = function () {
         $(element).click((e) => {
             if (e.target && e.target.hasAttribute("data-close")) {
                 $('.modal').fadeOut(500);
-                // document.body.style.overflow = '';
+                document.body.style.overflow = '';
             }
         });
     });
     $('.modal').click((e) => {
         if (e.target.classList.contains('modal')) {
             $('.modal').fadeOut(500);
-            // document.body.style.overflow = '';
+            document.body.style.overflow = '';
         }
     });
 };
