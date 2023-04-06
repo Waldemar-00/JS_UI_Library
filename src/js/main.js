@@ -22,3 +22,18 @@ $('.wrapper').html(
     </div>`
 );
 $('.dropdown-toggle').dropdown();
+$('#create').click(() => {
+    $('#create').createModal({
+        texts: {
+            title: 'Create modal title',
+            body: ' Lorem ipsum dolor sit amet consectetur!',
+        },
+        buttons: {
+            count: 2,
+            settings: [
+                ["Close", ['btn', 'orange-btn', 'mr-10'], true],
+                ['Save changes', ['btn', 'blue-btn', 'mr-10'], false, () => { console.log('Success'); }],
+            ]
+        }
+    });
+});
