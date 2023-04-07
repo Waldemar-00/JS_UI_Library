@@ -22,6 +22,8 @@ $('.wrapper').html(
     </div>`
 );
 $('.dropdown-toggle').dropdown();
+// Modal create
+
 $('#create').click(() => {
     $('#create').createModal({
         texts: {
@@ -31,8 +33,8 @@ $('#create').click(() => {
         buttons: {
             count: 2,
             settings: [
-                ["Close", ['btn', 'orange-btn', 'mr-10'], true],
-                ['Save changes', ['btn', 'blue-btn', 'mr-10'], false, () => { console.log('Success'); }],
+                ["Close", ['btn', 'orange-btn', 'mr-10', 'remove']],
+                ['Save changes', ['btn', 'blue-btn', 'mr-10'], () => { console.log('Success'); }],
             ]
         }
     });
