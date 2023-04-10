@@ -1,6 +1,6 @@
 import $ from '../core';
 
-$.prototype.on = function (action, callback) {
+$.prototype.on = function (action, callback, e) {
     if (action && callback) {
         for (let i = 0; i < this.length; i++) {
             if (this[i].style) {

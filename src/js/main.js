@@ -39,4 +39,3 @@ $('#create').click(() => {
         }
     });
 });
-// document.querySelector('.create').click();
