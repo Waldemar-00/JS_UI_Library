@@ -33,7 +33,7 @@ $.prototype.find = function (selector) {
     let noteCounter = 0;
     const copy = Object.assign({}, this);
     for (let i = 0; i < copy.length; i++) {
-        const array = copy[i].querySelectorAll(selector);
+        const array = document.querySelectorAll(selector);
         if (array.length === 0) {
             continue;
         }
@@ -80,7 +80,8 @@ $.prototype.siblings = function () {
         items += array.length - 1;
     }
     this.length = items;
-    for (; items < Object.keys(this).length; items++) {
+    const objectLength = Object.keys(this).length;
+    for (; items < objectLength; items++) {
         delete this[items];
     }
     return this;
