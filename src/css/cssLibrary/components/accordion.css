@@ -8,9 +8,13 @@
     min-height: 50px;
     padding: 0 20px;
     border: 1px solid var(--color-orange);
+    border-bottom: none;
     font-size: 20px;
     line-height: 50px;
     cursor: pointer;
+}
+.accordion:last-child {
+    border-bottom:  1px solid var(--color-orange); 
 }
 .accordion-header__active {
     background-color: var(--color-bg);
