@@ -6,4 +6,5 @@
     --color-black: hsl(0, 0%, 29%);
     --color-grey: hsl(0, 0%, 81%);
     --color-border: hsl(240, 100%, 89%); 
+    --color-bg: hsl(0, 100%, 91%);
 }
