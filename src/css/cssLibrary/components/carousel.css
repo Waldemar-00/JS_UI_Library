@@ -51,3 +51,27 @@
     height: 100%;
     object-fit: cover;
 }
+.carousel-prev, .carousel-next {
+    font-size: 60px;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-red);
+    opacity: 0.7;
+    width: 15%;
+}
+.carousel-prev:hover, .carousel-next:hover {
+    opacity: 1;
+    background-color: hsl(348, 100%, 95%);
+}
+.carousel-prev {
+    left: -135px;
+}
+.carousel-next {
+    right: -135px;
+}
