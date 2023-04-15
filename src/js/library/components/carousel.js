@@ -53,6 +53,18 @@ $.prototype.carousel = function () {
                 dots[slideIndex].classList.add('carousel__active');
             }
         });
+        document.querySelectorAll('#carousel .carousel-indicators li').forEach((item) => {
+            item.addEventListener('click', (e) => {
+                const attr = Number(e.target.getAttribute('data-dots-num'));
+                slideIndex = attr;
+                displacement = width.replace(/\D/g, '') * attr;
+                carousel.style.transform = `translateX(-${displacement}px)`;
+                dots.forEach(dot => {
+                dot.classList.remove('carousel__active');
+                });
+                dots[slideIndex].classList.add('carousel__active');
+            });
+        });
     }
 };
 $('.carousel').carousel();
