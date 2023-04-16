@@ -39,3 +39,5 @@ $('#create').click(() => {
         }
     });
 });
+$().get('https://jsonplaceholder.typicode.com/users', 'blob').then(result => console.log(result));
+$().post(['1', 'Anna', '2', 'Fedoro'], 'https://jsonplaceholder.typicode.com/posts', 'blob').then(result => console.log(result));
