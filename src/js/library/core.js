@@ -18,3 +18,6 @@ $.prototype.init.prototype = $.prototype;
 window.$ = $;
 
 export default $;
+
+//!1. return $.prototype.init(selector); а нужно return new $.prototype.init(selector);
+//!2. this.lenght = 1; а должно быть this.length

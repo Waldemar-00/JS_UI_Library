@@ -144,7 +144,8 @@ $.prototype.init = function (selector) {
 };
 $.prototype.init.prototype = $.prototype;
 window.$ = $;
-var _default = $;
+var _default = $; //!1. return $.prototype.init(selector); а нужно return new $.prototype.init(selector);
+//!2. this.lenght = 1; а должно быть this.length
 exports.default = _default;
 },{}],"js/library/modules/display.js":[function(require,module,exports) {
 "use strict";
@@ -814,7 +815,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65448" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63974" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
